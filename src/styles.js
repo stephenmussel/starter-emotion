@@ -53,7 +53,7 @@ export const TitleWrapper = styled.h2`
 export const DescriptionWrapper = styled.h3`
     margin-top: 5px;
     font-size: ${(props) => props.theme.fontSize.secondary};
-    color: #023e8a;
+    color: #${(props) => props.theme.colors.tertiary};
 `;
  
 export const ActionWrapper = styled.div`
@@ -80,11 +80,11 @@ export const Button = styled.button`
 
 // using compositino to create variants
 export const PrimaryButton = styled(Button)`
-    background-color: #03045e;
-    color: #caf0f8;
+    background-color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.secondary};
 `;
 
 export const SecondaryButton = styled(Button)`
-    background-color: #caf0f8;
-    color: #03045e;
+    background-color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.primary};
 `;
