@@ -42,12 +42,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <main
-      css={{
-        color: "#03045e",
-        background: "#caf0f8",
+      css={(theme) => ({
+        color: theme.colors.primary,
+        background: theme.colors.secondary,
         height: "1200px",
-        fontFamily: "helvetica",
-      }}
+        fontFamily: theme.fonts.primary,
+      })}
     >
       <img
         src={logo}
