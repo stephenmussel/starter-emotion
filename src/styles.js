@@ -28,3 +28,15 @@ export const TitleWrapper = styled.h2`
     margin: 0;
     font-size: 20px;
 `;
+
+export const DescriptionWrapper = styled.h3`
+    martin-top: 5px;
+    font-size: 14px;
+    color: #023e8a;
+`;
+
+export const ActionWrapper = styled.div`
+    margin-left: 10px;
+    padding: 10px 0;
+    display: flex;
+`;

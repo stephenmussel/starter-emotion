@@ -7,6 +7,8 @@ import { CardWrapper } from './styles';
 import { ImageWrapper } from "./styles";
 import { TextWrapper } from "./styles";
 import { TitleWrapper } from "./styles";
+import { DescriptionWrapper } from "./styles";
+import { ActionWrapper } from "./styles";
 
 const hotels = [
   {
@@ -54,7 +56,7 @@ function App() {
           width: 100px;
         `}
       />
-      <div
+      <ActionWrapper
         css={css`
           display: flex;
           justify-content: center;
@@ -72,7 +74,7 @@ function App() {
               <ImageWrapper src={hotel.src} alt={hotel.alt} />
               <TextWrapper>
                 <TitleWrapper>{hotel.title}</TitleWrapper>
-                <h3>{hotel.description}</h3>
+                <DescriptionWrapper>{hotel.description}</DescriptionWrapper>
               </TextWrapper>
               <TextWrapper>
                 <button>Details</button>
@@ -81,7 +83,7 @@ function App() {
             </CardWrapper>
           );
         })}
-      </div>
+      </ActionWrapper>
     </main>
   );
 }
