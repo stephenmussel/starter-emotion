@@ -52,7 +52,7 @@ export const TitleWrapper = styled.h2`
  
 export const DescriptionWrapper = styled.h3`
     margin-top: 5px;
-    font-size: 14px;
+    font-size: ${(props) => props.theme.fontSize.secondary};
     color: #023e8a;
 `;
  
