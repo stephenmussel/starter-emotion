@@ -1,6 +1,6 @@
-// create and export styled components along with the animation and theming
 import styled from "@emotion/styled";
 
+// create and export styled components
 export const CardWrapper = styled.div`
     width: 250px;
     height: 325px;
@@ -57,6 +57,7 @@ export const Button = styled.button`
     }
 `;
 
+// using compositino to create variants
 export const PrimaryButton = styled(Button)`
     background-color: #03045e;
     color: #caf0f8;
@@ -66,3 +67,5 @@ export const SecondaryButton = styled(Button)`
     background-color: #caf0f8;
     color: #03045e;
 `;
+
+// theming

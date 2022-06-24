@@ -1,7 +1,7 @@
 import logo from "./logo.png";
 // import `css`and `ThemeProvider` from "@emotion/react" package
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css, ThemeProvider } from '@emotion/react';
 // import styled components, theming and animation from "./styles.js" file
 import { CardWrapper } from './styles';
 import { ImageWrapper } from "./styles";
