@@ -1,5 +1,8 @@
 import styled from "@emotion/styled";
 
+// used to define animations
+import { keyframes } from "@emotion/react";
+
 // theming
 /** if there's enough forsight, you can do this first otherwise,
  * create the styled components first and then add theme
@@ -20,6 +23,15 @@ export const theme = {
         secondary: "14px",
     },
 };
+
+export const LogoSpin = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+`;
 
 // create and export styled components
 export const CardWrapper = styled.div`

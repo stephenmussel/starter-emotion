@@ -12,6 +12,7 @@ import { ActionWrapper } from "./styles";
 // import { Button } from './styles';
 import { PrimaryButton, SecondaryButton } from "./styles";
 import { theme } from './styles';
+import { LogoSpin } from "./styles";
 
 const hotels = [
   {
@@ -58,6 +59,7 @@ function App() {
           margin-left: 15px;
           height: 100px;
           width: 100px;
+          animation: ${LogoSpin} 10s linear infinite;
         `}
       />
       <ActionWrapper
