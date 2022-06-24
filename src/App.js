@@ -9,6 +9,7 @@ import { TextWrapper } from "./styles";
 import { TitleWrapper } from "./styles";
 import { DescriptionWrapper } from "./styles";
 import { ActionWrapper } from "./styles";
+import { Button } from './styles';
 
 const hotels = [
   {
@@ -76,10 +77,10 @@ function App() {
                 <TitleWrapper>{hotel.title}</TitleWrapper>
                 <DescriptionWrapper>{hotel.description}</DescriptionWrapper>
               </TextWrapper>
-              <TextWrapper>
-                <button>Details</button>
-                <button>Book</button>
-              </TextWrapper>
+              <ActionWrapper>
+                <Button>Details</Button>
+                <Button>Book</Button>
+              </ActionWrapper>
             </CardWrapper>
           );
         })}
