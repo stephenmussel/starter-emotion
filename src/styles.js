@@ -1,10 +1,31 @@
 import styled from "@emotion/styled";
 
+// theming
+/** if there's enough forsight, you can do this first otherwise,
+ * create the styled components first and then add theme
+ */
+
+export const theme = {
+    colors: {
+        primary: "#03045e",
+        secondary: "#caf0f8",
+        tertiary: "#023e8a",
+        quaternary: "#fff",
+    },
+    fonts: {
+        primary: "helvetica",
+    },
+    fontSize: {
+        primary: "20px",
+        secondary: "14px",
+    },
+};
+
 // create and export styled components
 export const CardWrapper = styled.div`
     width: 250px;
     height: 325px;
-    background: #fff;
+    background: ${(props) => props.theme.colors.quaternary};
     border-radius: 15px;
     padding-bottom: 5px;
     @media (max-width: 900px) {
@@ -67,5 +88,3 @@ export const SecondaryButton = styled(Button)`
     background-color: #caf0f8;
     color: #03045e;
 `;
-
-// theming

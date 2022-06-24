@@ -9,8 +9,9 @@ import { TextWrapper } from "./styles";
 import { TitleWrapper } from "./styles";
 import { DescriptionWrapper } from "./styles";
 import { ActionWrapper } from "./styles";
-import { Button } from './styles';
+// import { Button } from './styles';
 import { PrimaryButton, SecondaryButton } from "./styles";
+import { theme } from './styles';
 
 const hotels = [
   {
@@ -39,6 +40,7 @@ const hotels = [
 // Apply styling to code within the `App` component's `return` statement using styled components, theming, animation and the `css` prop
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <main
       css={{
         color: "#03045e",
@@ -87,6 +89,7 @@ function App() {
         })}
       </ActionWrapper>
     </main>
+    </ThemeProvider>
   );
 }
 
