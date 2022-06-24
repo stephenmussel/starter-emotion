@@ -47,7 +47,7 @@ export const TextWrapper = styled.div`
  
 export const TitleWrapper = styled.h2`
     margin: 0;
-    font-size: 20px;
+    font-size: ${(props) => props.theme.fontSize.primary};
 `;
  
 export const DescriptionWrapper = styled.h3`
