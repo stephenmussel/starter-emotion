@@ -4,6 +4,9 @@ import logo from "./logo.png";
 import { css } from '@emotion/react';
 // import styled components, theming and animation from "./styles.js" file
 import { CardWrapper } from './styles';
+import { ImageWrapper } from "./styles";
+import { TextWrapper } from "./styles";
+import { TitleWrapper } from "./styles";
 
 const hotels = [
   {
@@ -66,15 +69,15 @@ function App() {
         {hotels.map((hotel) => {
           return (
           <CardWrapper key={hotel.id}>
-              <img src={hotel.src} alt={hotel.alt} />
-              <div>
-                <h2>{hotel.title}</h2>
+              <ImageWrapper src={hotel.src} alt={hotel.alt} />
+              <TextWrapper>
+                <TitleWrapper>{hotel.title}</TitleWrapper>
                 <h3>{hotel.description}</h3>
-              </div>
-              <div>
+              </TextWrapper>
+              <TextWrapper>
                 <button>Details</button>
                 <button>Book</button>
-              </div>
+              </TextWrapper>
             </CardWrapper>
           );
         })}

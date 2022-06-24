@@ -11,3 +11,20 @@ export const CardWrapper = styled.div`
         width: 400px;
     }
 `;
+
+export const ImageWrapper = styled.img`
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0 0;
+`;
+
+export const TextWrapper = styled.div`
+    padding: 10px;
+    height: 50px;
+`;
+
+export const TitleWrapper = styled.h2`
+    margin: 0;
+    font-size: 20px;
+`;
